@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: ru.agentlab.hypergraph.dialog.test
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: ru.agentlab.hypergraph.dialog.model,
+ ru.agentlab.hypergraph.dialog.service,
+ ru.agentlab.hypergraph.dialog.service.impl
+Require-Bundle: com.codeaffine.osgi.test.util;bundle-version="0.1.0",
+ org.junit;bundle-version="4.12.0",
+ org.hamcrest.core;bundle-version="1.3.0",
+ org.hamcrest.library;bundle-version="1.3.0"
