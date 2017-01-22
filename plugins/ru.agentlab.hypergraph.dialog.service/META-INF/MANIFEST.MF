@@ -14,6 +14,5 @@ Bundle-ClassPath: lib/hgbdbje-1.3.jar,
  lib/hgdb-1.3.jar,
  lib/je-5.0.34.jar,
  .
-Service-Component: OSGI-INF/component.xml,
- OSGI-INF/DialogDBService.xml
+Service-Component: OSGI-INF/DialogDBService.xml
 Bundle-ActivationPolicy: lazy
