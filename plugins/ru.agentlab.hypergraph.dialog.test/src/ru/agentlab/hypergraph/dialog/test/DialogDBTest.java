@@ -75,6 +75,25 @@ public class DialogDBTest {
     	assertTrue(service.getMessage(123000001) == null);
     }
 
+    @Test
+    public void addMessageTest() {
+        service.addDialog(dialog);
+
+        Message m3 = new Message("Test_message_3", sender2, new Date(), 1);
+
+        service.addMessage(m3, 123);
+        Message m4 = service.getMessage(123000002);
+
+        Message m5 = new Message("Test_message_3", sender2, new Date(), 1);
+        service.addMessage(m5, 123);
+
+        Message m6 = service.getMessage(123000003);
+
+        assertTrue(m3.equals(m4));
+        assertTrue(m5.equals(m6));
+        service.deleteDialog(123);
+    }
+
     @AfterClass
     public static void setDown() {
         service.closeDB();
